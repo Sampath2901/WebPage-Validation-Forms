@@ -1,0 +1,13 @@
+body {    
+    /* background-color: #20cfc9; */
+     width: 490px;
+     margin: 2px auto;
+     border: 0px solid;
+     background-image: url("BG_FormImage.jpg");
+}
+form {
+    border: 5px solid rgb(63, 214, 228);
+     margin: 10px auto;
+    }
+    
+  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="FormValidation.css">
+    <script src="FormValidation.js" defer></script>
+    
+
+</head>
+<body >
+    <center>
+    <div> 
+      <h1 class="heading"><font color="Blue">Registration Form</font></h1>
+     </div> 
+    <form> 
+        <div>  <br>
+          <input id="Fname" placeholder="First name" type="text"  /> <br>
+           <label id="FnameERR" style="color: rgb(255, 0, 0);visibility:hidden">Invalid FirstName</label>
+         </div>
+          <div>
+            <input id="Lname" placeholder="Last Name" type="text"/>  <br>
+            <label id="LnameERR" style="color: rgb(255, 0, 0);visibility:hidden">Invalid LastName</label>
+         </div>
+         <div>
+            <input id="Str" type="text" placeholder="Street address" /> <br>
+            <label id="StrERR" style="color: red;visibility: hidden;">Please enter valid street name</label>
+         </div>
+         <div>
+            <input id="Apt" type="text" placeholder="#apt no" /> <br>
+            <label id="AptERR" style="color: red;visibility: hidden;">Enter #apt/apt number</label>
+         </div>
+         <div>
+            <input id="Cit" type="text" placeholder="City Name" /> <br>
+            <label id="CitERR" style="color: red;visibility: hidden;">Enter City Name</label>
+         </div>
+         <div>
+            <input id="State" type="text" placeholder="State Name" /> <br>
+            <label id="StateERR" style="color: red;visibility: hidden;">Enter State Name (hint: Texas or TX)</label>
+         </div>
+         <div>
+            <input id="Zip" type="text" placeholder="Zip Code" /> <br>
+            <label id="ZipERR" style="color: red;visibility: hidden;">Please enter 5 digit zip in valid format hint: 76013</label>
+         </div>
+         <div>
+            <input id="phone" placeholder="Mobile Number" type="text" /> <br>
+            
+            <label id="phoneERR" style="color: red;visibility:hidden">Enter valid format: 213-456-7899 </label>
+         </div>
+         <div>
+            <input id="Email" type="text" placeholder="EmailID"/> <br>
+            <label id="EmailERR" style="color: red;visibility: hidden;">Hint: test@gmail.com</label>
+         </div>
+         <div>
+            <input id="Pass" type="password" placeholder="Password"/> <br>
+            <label id="PassERR" style="color: red;visibility: hidden;">First letter must be capital,Required atleast one special character</label>
+         </div>
+         <div> 
+            <input id="Date" placeholder="MM-DD-YYYY" type="text" /><br>
+            
+            <label id="DateERR" style="color: red;visibility: hidden;">Enter valid format MM-DD-YYYY</label>
+         </div>
+         <div>
+            <fieldeset id="payment">
+                Card Payment <input id="Radio1" type="radio" name="type" value="usa"> <br>
+                Digital Payment <input id="Radio2" type="radio" name="type" value="canada"> <br>
+                <label id="RadioERR" style="color: red;visibility: hidden;">choose one radio button</label>
+              </fieldeset>
+              <br>
+                <select id="choose" placeholder="Select payement mode" multiple>
+                    <option value="none" disabled selected>Select payement mode</option>
+                </select>
+         </div>
+         <div><br>
+            <!-- <textarea maxlength="50" name="msg" onkeyup="countChars(this);"></textarea> -->
+            <!-- <p id="total">0 characters</p> -->
+            <textarea id="textarea" placeholder="type..." ></textarea>  
+            <p>No of Characters:  <span id="myText"></span></p>
+              
+
+        </div><br>
+         <div>
+         <button id="size" type="button" onclick="validateall()">Click to Register</button>  <br>
+         <label id="buttontxtERR" style="color: rgb(0, 21, 255);visibility: hidden;">Your form filled correctly!</label>
+         </div>
+      </form></center>
+</body>
+</html>
